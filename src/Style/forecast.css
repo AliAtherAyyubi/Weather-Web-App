@@ -1,0 +1,52 @@
+
+
+.forecast{
+    position: relative;
+    /* margin-top: 50px; */
+    /* top: 10%; */
+    box-sizing: border-box;
+    margin-top: 20px;
+    /* border: 1px solid white; */
+}
+.forecast .content{
+    /* position: absolute; */
+    width: 160px;
+    max-height: 120px;
+    border-radius: 10px;
+    padding: 10px;
+    /* margin-right: 10px; */
+    background-color: rgb(60, 114, 230);
+}
+.content .date span{
+    margin-left: 25px;
+}
+
+.temp-icon{
+    display: flex;
+}
+
+.temp-icon .icon{
+    height: 60px;width: 60px;
+    margin-right: 15px;
+}
+.highlow{
+    margin-top: 10px;
+}
+
+
+.swiper {
+    max-width: 600px;
+    /* height: 100px; */
+  }
+
+  .swiper-button-prev,.swiper-button-next{
+    /* color: white; */
+    display: none;
+  }
+  /* .swiper-button-prev{
+    margin-right: 300px;
+
+  }
+  .swiper-button-next{
+    margin-left: 100px;
+  } */

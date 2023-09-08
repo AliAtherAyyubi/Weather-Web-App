@@ -1,0 +1,117 @@
+.detailbox{
+    position: relative;
+    height: 100%;
+    padding: 0;
+    overflow: hidden;
+    background-color: rgb(147, 147, 147);
+    /* border: 1px solid; */
+    color: white;
+    background-image: linear-gradient(rgb(3, 56, 180), rgb(99, 140, 211) 95%);
+}
+
+
+#searchform{
+    display: flex;
+    height: 70px;
+    
+}
+#searchbox{
+    border: none;
+    border-bottom: 1px solid rgb(255, 255, 255);
+    width: 100%;
+    padding: 20px;
+    /* outline: none; */
+    font-size: 1.3em;
+    border-radius: 0;
+    color: white;
+    background-color: transparent;
+
+}
+input:focus{
+    outline: none;
+}
+#searchform .btn{
+    border: none;
+    width: 70px;
+    border-radius: 0%;
+    background-color: rgb(0, 174, 255);
+    transition: 0.5s ease;
+}
+#searchform .btn:hover{
+    background-color: rgb(2, 135, 196);
+}
+#searchform .btn i{
+    font-size: 1.3em;
+}
+.list-group{
+    overflow-y: scroll;
+    height: 250px;
+    border-radius: 0;
+    border: none;
+    border-bottom: 2px solid rgb(255, 255, 255);
+
+}
+.list-group-item{
+    padding: 15px;
+    padding-left: 50px;
+    /* margin-left: 20px; */
+    border: none;
+    font-size: 1.2em;
+    background-color: transparent;
+    color: white;
+    cursor: pointer;
+    transition: 0.5s ease;
+}
+.list-group-item:hover{
+    color: black;
+    background-color: rgb(177, 177, 238);
+}
+
+/* $input-focus-bg: */
+.weatherdetail{
+    position: relative;
+    margin-top: 10px;
+    height: 250px;
+    /* overflow-x: hidden; */
+    overflow-y: scroll;
+    /* background-color: transparent; */
+
+}
+.weatherdetail .table1{
+    margin: 15px 30px;
+    font-size: 1.2em;
+
+}
+.right{
+    position: absolute;
+    right: 20px;
+    /* margin-bottom: 20px; */
+}
+
+.table1 tbody tr td{
+    padding: 10px;
+    /* margin-bottom: 20px; */
+}
+
+
+.list-group::-webkit-scrollbar,.weatherdetail::-webkit-scrollbar{
+    display: none;
+}
+
+@media screen and (max-width:1200px) {
+    .weatherbox{
+        overflow: hidden;
+        max-width: 900px;
+        box-shadow: none;
+    }
+    
+    .detailbox{
+        position: absolute;
+        transition: 0.5s ease;
+        z-index: 1;
+        /* left: ; */
+        right: -380px;
+        /* width: 100%; */
+        /* display: none; */
+    }
+}
