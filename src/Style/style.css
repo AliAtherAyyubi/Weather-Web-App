@@ -119,6 +119,9 @@ body{
     cursor: pointer;
     display: none;
 }
+#searchbox::placeholder { /* Edge 12 -18 */
+    color: white;
+  }
 @media screen and (max-width:1200px) {
     /* .tempdetail{
         flex-direction: column;
